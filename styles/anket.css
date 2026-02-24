@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body.main_body {
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.anket_page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_wrap {
+    width: 259.95px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.anket_logo {
+    display: block;
+    width: 259.95px;
+    height: auto;
+}
+
+.tagline {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.preview {
+    display: block;
+    width: 524.82px;
+    height: 309.37px;
+    object-fit: cover;
+}
+
+.legal_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.legal_links a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.dot {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.policy_body {
+    display: block;
+}
+
+.policy_page {
+    min-height: 100vh;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 36px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.policy_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.policy_header .anket_logo {
+    width: 220px;
+}
+
+.policy_header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.policy_header p {
+    margin: 0;
+}
+
+.policy_card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 24px;
+}
+
+.policy_card h2 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.policy_card p {
+    margin: 0 0 16px;
+    line-height: 1.45;
+}
+
+.policy_card p:last-child {
+    margin-bottom: 0;
+}
+
+.policy_footer_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.policy_footer_nav a {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .preview {
+        width: min(524.82px, 100%);
+        height: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo_wrap,
+    .anket_logo {
+        width: 100%;
+    }
+
+    .logo_wrap {
+        max-width: 259.95px;
+    }
+}
